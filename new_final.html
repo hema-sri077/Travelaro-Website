@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Travelora</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="new_style.css">
+    
+
+
+    </head>
+    <body>
+    <div class="container">
+        <div class="header">
+            <button id="darkBtn">🌙</button>
+            <div class="icon area">
+                <img src="aero.png" width="50" height="50" class="icon">
+                
+                <span class="icon_name">Travelora</span>
+
+            </div>
+            <div class="menu area">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+    </ul>
+
+            </div>
+
+        </div>
+        <div class="content">
+            <div class="main_content" id="home">
+                
+                <button id="showFormBtn">Book Now</button>
+                
+
+<div id="bookingForm" style="display:none;">
+    <h2>Book Your Trip</h2>
+
+    <input type="text" id="name" placeholder="Name">
+    <input type="text" id="mobile" placeholder="Mobile Number">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="address" placeholder="Address">
+    <input type="text" id="destination" placeholder="Destination">
+
+    <button id="bookNow">Submit Booking</button>
+
+    <p id="message"></p>
+    
+</div>
+                <h2 class="main_heading">Travel with no Limits</h2>
+                <p>Travel is the movement of people between different geographical locations</p>
+
+            </div>
+            <h1 class="services_heading" id="services">Our Services</h1>
+            <div class="services">
+                <div class="card1">
+                    <img src="travelll.jpeg"  class="card1_img1">
+                    <p>Travel with all the freeness</p>
+
+                </div>
+                <div class="card2">
+                     <img src="travel agent.jpeg"  class="card2_img2">
+                     <p>We will give 24/7 support, Always with you</p>
+                    
+
+                </div>
+                <div class="card3">
+                    <img src="budget.jpeg"  class="card3_img3">
+                    <p>Travel with affordable prices, Budget friendly</p>
+
+                    
+                </div>
+
+            </div>
+            <div class="about_us" id="about">
+                <img src="plan.webp" class="side_img">
+                <div class="side_text">
+                    <h1>About Us</h1>
+                    <p>WELCOME TO TRAVEL YOUR ULTIMATE PARTNER IN EXPLORING THE WORLD! WITH A PASSION FOR TRAVEL AND A COMMITMENT TO EXCEPTIONAL SERVICE, WE SPECIALIZE IN CRAFTING UNFORGETTABLE EXPERIENCES TAILORED JUST FOR YOU FOUNDED IN 2000, OUR AGENCY HAS BEEN DEDICATED TO TURNING YOUR DREAM VACATIONS INTO REALITY OUR TEAM OF SEASONED TRAVEL EXPERTS BRINGS A WEALTH OF KNOWLEDGE AND PERSONAL TOUCH TO EVERY JOURNEY WE DESIGN. FROM EXOTIC GETAWAYS AND CULTURAL ADVENTURES TO RELAXING RETREATS AND FAMILY VACATIONS, WE HANDLE ALL THE DETAILS SO YOU CAN FOCUS ON MAKING MEMORIES. OUR MISSION IS TO PROVIDE OUTSTANDING SERVICE AND CREATE EXPERIENCES THAT EXCEED YOUR EXPECTATIONS. WHETHER YOU'RE PLANNING A ROMANTIC ESCAPE, A THRILLING ADVENTURE, OR A PEACEFUL RETREAT, WE'RE HERE TO GUIDE YOU EVERY STEP OF THE WAY JOIN US IN EXPLORING THE WORLD WITH CONFIDENCE AND EXCITEMENT LET "TRAVELORA" BE YOUR GATEWAY TO EXTRAORDINARY TRAVEL EXPERIENCES!</p>
+
+                </div>
+
+
+            </div>
+            <div class="gallery" id="gallery">
+                <h2 class="gallery_text">Our Gallery</h2>
+                <img src="bridge.avif" class="g1">
+                <img src="boat.jpeg" class="g2">
+                <img src="balloon.jpeg" class="g3">
+                <img src="couple.jpeg" class="g4">
+                <img src="ship.jpeg" class="g5">
+                <img src="street.jpeg" class="g6">
+                
+
+            </div>
+            
+</div>
+
+        </div>
+        <div class="footer">
+            <div class="address">
+                123 East Texas,<br>
+                California, South <br>
+                United States
+            </div>
+            <div class="contact">
+                <p>Travel@gmail.com</p>
+                <p>+91123456789</p>
+                <p>@2026</p>
+            </div>
+
+        </div>
+    </div>
+    <script>
+document.getElementById("welcomeBtn").addEventListener("click",function(){
+    alert("Welcome to Travel! Let's plan your next adventure.");
+});
+</script>
+     <script>
+let images=document.querySelectorAll(".gallery img");
+
+images.forEach(function(img){
+    img.addEventListener("click",function(){
+        window.open(img.src,"_blank");
+    });
+});
+</script>
+    <button id="topBtn">⬆</button>
+
+<script src="script.js"></script>
+     
+     <script>
+document.getElementById("darkBtn").addEventListener("click", function(){
+    document.body.classList.toggle("dark-mode");
+});
+</script>
+    <script>
+document.getElementById("showFormBtn").addEventListener("click", function(){
+    document.getElementById("bookingForm").style.display = "block";
+});
+
+document.getElementById("bookNow").addEventListener("click", function(){
+
+    let name = document.getElementById("name").value;
+    let destination = document.getElementById("destination").value;
+
+    document.getElementById("message").innerHTML =
+    "✅ Booking Successful! Thank you " + name +
+    ". Your trip to " + destination + " has been booked.";
+});
+</script>
+    
+</div>
+
+    </body>
+
+</html>
