@@ -9,7 +9,7 @@ document.getElementById("bookBtn").addEventListener("click",function(){
 });
 
 // Dark mode
-document.getElementById("darkModeBtn").addEventListener("click",function(){
+document.getElementById("darkBtn").addEventListener("click",function(){
     document.body.classList.toggle("dark-mode");
 });
 

@@ -161,7 +161,9 @@ li:hover{
 .dark-mode .footer{
     background-color:black;
 }
-
+.dark-mode .header{
+    background-color: black;
+}
 .dark-mode .card1,
 .dark-mode .card2,
 .dark-mode .card3{
